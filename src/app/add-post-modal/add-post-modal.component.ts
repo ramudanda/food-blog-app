@@ -7,8 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class AddPostModalComponent implements OnInit {
-  
-  PostModelTittle = 'Add Post';
+
+  PostModelTittleAdd = 'Add Post';
+  PostModelTittleEdit = 'Edit Post';
+
+  PostModelTittleEditInput = "Tittle1";
+  PostModelContentEditInput = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!";
 
   constructor() {}
 
