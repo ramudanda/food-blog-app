@@ -1,6 +1,6 @@
 <div class="container">
     <div class="pull-right pt-4 pb-4">
-      <button (click)="add_post()" type="button" data-toggle="modal" data-target="#add-post-popup" class="btn btn-outline-primary">Add Post</button>
+      <button type="button" (click)="addPostOnClick()" data-toggle="modal" data-target="#add-post-popup" class="btn btn-outline-primary">Add Post</button>
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -12,7 +12,7 @@
                       <a href="">{{ post.postedBy }}</a>
                   </div>
                   <div class="col-md-2">
-                      <a (click)="test()" data-toggle="modal" data-target="#edit-post-popup" class="btn btn-link">Edit</a>
+                      <a (click)="editPostOnClick(post)" data-toggle="modal" data-target="#edit-post-popup" class="btn btn-link">Edit</a>
                       <a (click)="delete_post(this)" class="btn btn-link">Delete</a>
                   </div>
               </div>
