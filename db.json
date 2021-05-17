@@ -1,0 +1,24 @@
+{
+  "posts":[
+    {
+      "id":1,
+      "tittle":"Tittle1",
+      "postedDate" : "Posted on January 1, 2021 by",
+      "postedBy" : "phaniteja",
+      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
+    },
+    {
+      "id":2,
+      "tittle":"Tittle2",
+      "postedDate" : "Posted on January 1, 2021 by",
+      "postedBy" : "ramdeeepak",
+      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
+    },
+    { "id":3,
+      "tittle":"Tittle3",
+      "postedDate" : "Posted on January 1, 2021 by",
+      "postedBy" : "dhulipalla",
+      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
+    }
+  ]
+}

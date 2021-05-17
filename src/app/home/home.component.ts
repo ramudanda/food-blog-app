@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from '../services/posts.service';
 
 @Component({
   selector: 'app-home',
@@ -8,35 +9,31 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  postsJson: any[] = [
-    {
-      "tittle":"Tittle1",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "phaniteja",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-    },
-    {
-      "tittle":"Tittle2",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "ramdeeepak",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-    },
-    {
-      "tittle":"Tittle3",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "dhulipalla",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-    }
-  ]
+  postsJson: any[];
+  dataById: any[];
+  postId: any[];
+  tittleToDisplay: string;
 
-  constructor() { }
+  constructor(public getPosts:PostsService) { }
 
   ngOnInit(): void {
-    this.display_posts()
+    this.getPosts.getPosts().subscribe((data: any[])=>{
+      this.postsJson = data;
+    });
   }
 
-  display_posts(){}
+  addPostOnClick(){
+    debugger
+    this.tittleToDisplay = "Add Post";
+  }
 
-  add_post(){}
-  
+  editPostOnClick(currentPostData){
+    this.tittleToDisplay = "Edit Post";
+    this.postId = currentPostData.id;
+    this.getPosts.getPostsById(this.postId).subscribe((data: any[])=>{
+      this.dataById = data;
+      console.log(this.dataById)
+    });
+  }
+
 }

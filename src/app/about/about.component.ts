@@ -1,20 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-/* import { HomeComponent } from '../home/home.component' */
+import { Component , OnInit} from '@angular/core';
+import { ContactComponent } from '../contact/contact.component';
+//import { PostsService } from '../services/posts.service';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  te(postsJson){
-    console.log(postsJson)
-  }
-
+    constructor() { 
+      let ContactComponentCop = new ContactComponent();
+      console.log(ContactComponentCop.variableTest)
+    }
+    ngOnInit(): void {
+    }
 }
