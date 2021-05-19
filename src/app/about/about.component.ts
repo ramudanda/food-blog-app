@@ -10,7 +10,7 @@ import { ContactComponent } from '../contact/contact.component';
 
 export class AboutComponent implements OnInit {
     constructor() { 
-      let ContactComponentCop = new ContactComponent();
+      let ContactComponentCop = new ContactComponent(null);
       console.log(ContactComponentCop.variableTest)
     }
     ngOnInit(): void {
