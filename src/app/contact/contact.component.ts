@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -10,13 +11,17 @@ export class ContactComponent {
 
   variableTest:string;
 
-  constructor() { 
+  constructor(private router: Router) { 
      this.variableTest = "variableTestTesttt"
   }
 
   ngOnInit(): void {
     debugger
     console.log(this.variableTest)
+  }
+
+  test(){
+    this.router.navigateByUrl('')
   }
 
 }

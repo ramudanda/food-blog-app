@@ -1,24 +1,18 @@
 {
-  "posts":[
+  "posts": [
     {
-      "id":1,
-      "tittle":"Tittle1",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "phaniteja",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
+      "tittle": "Tittle 1",
+      "postedDate": "Posted on January 1, 2021 by",
+      "postedBy": "Phani teja",
+      "content": "Food is usually of plant, animal or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth.",
+      "id": 1
     },
     {
-      "id":2,
-      "tittle":"Tittle2",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "ramdeeepak",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-    },
-    { "id":3,
-      "tittle":"Tittle3",
-      "postedDate" : "Posted on January 1, 2021 by",
-      "postedBy" : "dhulipalla",
-      "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
+      "tittle": "Tittle 2",
+      "postedDate": "05-19-2021",
+      "postedBy": "Ram Deepak",
+      "content": "Food is usually of plant, animal or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth.",
+      "id": 2
     }
   ]
 }
