@@ -65,8 +65,8 @@ export class HomeComponent implements OnInit {
       onSubmit(value) { 
           let savePostRequest = {
             "tittle": "",
-            "postedDate": "Posted on January 1, 2021 by",
-            "postedBy": "ramdeeepak",
+            "postedDate": "",
+            "postedBy": "Ram Deepak",
             "content": ""
           }
           savePostRequest.tittle = value.tittle;
